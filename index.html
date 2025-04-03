@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bizim Hikayemiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 class="title">Dünüm Bugünüm Yarınım</h1>
+  <div class="gallery">
+    <div class="card" onclick="openModal('sevgili')">
+      <img src="assets/sevgili.jpg" alt="Sevgili">
+    </div>
+    <div class="card" onclick="openModal('teklif')">
+      <img src="assets/teklif.jpg" alt="Teklif">
+    </div>
+    <div class="card" onclick="openModal('nisan')">
+      <img src="assets/nisan.jpg" alt="Nişan">
+    </div>
+    <div class="card" onclick="openModal('nikah')">
+      <img src="assets/nikah.jpg" alt="Nikah">
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <p id="modalText"></p>
+    <audio id="modalAudio" controls autoplay></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
